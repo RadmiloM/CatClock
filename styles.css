@@ -1,6 +1,8 @@
+@import url("https://fonts.googleapis.com/css?family=Bungee|Bungee+Shade|Covered+By+Your+Grace");
+
 body {
     background-color: #f16059;
-    font: 14px / 26px 'Bungee', Helvetica, Arial, sans-serif;
+    font: 14px / 26px 'Bungee Shade', Helvetica, Arial, sans-serif;
     text-transform: uppercase;
 }
 
