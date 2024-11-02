@@ -1,4 +1,5 @@
 let currentTime = document.querySelector('.current-time');
+let button = document.querySelector('.party');
 
 
 function getCurrentTime() {
@@ -28,6 +29,10 @@ function getCurrentTime() {
     currentTime.textContent = time;
 
 }
+
+button.addEventListener('click', () => {
+    button.classList.toggle('clicked');
+})
 
 
 function main() {
