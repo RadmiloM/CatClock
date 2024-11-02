@@ -1,26 +1,28 @@
-let currentTime = document.querySelector('.current-time');
-let button = document.querySelector('.party');
+const currentTime = document.querySelector('.current-time');
+const button = document.querySelector('.party');
+const blockQuote = document.querySelector('blockquote');
+
 
 
 function getCurrentTime() {
 
     const currentDate = new Date();
     let hours = currentDate.getHours();
-    let  minutes = currentDate.getMinutes();
+    let minutes = currentDate.getMinutes();
     let seconds = currentDate.getSeconds();
     const noon = 12;
     let meridian = 'AM';
 
-    if(hours > noon) {
-        hours-= noon;
+    if (hours > noon) {
+        hours -= noon;
         meridian = 'PM';
     }
 
-    if(minutes < 10) {
+    if (minutes < 10) {
         minutes = `0${minutes}`;
     }
 
-    if(seconds < 10) {
+    if (seconds < 10) {
         seconds = `0${seconds}`
     }
 
@@ -32,6 +34,11 @@ function getCurrentTime() {
 
 button.addEventListener('click', () => {
     button.classList.toggle('clicked');
+    if (blockQuote.textContent === '"Good Evening!"') {
+        blockQuote.textContent = "Let's party!"
+    } else {
+        blockQuote.textContent = '"Good Evening!"';
+    }
 })
 
 
