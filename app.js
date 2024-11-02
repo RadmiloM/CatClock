@@ -1,8 +1,7 @@
 const currentTime = document.querySelector('.current-time');
 const button = document.querySelector('.party');
 const blockQuote = document.querySelector('blockquote');
-
-
+const image = document.querySelector('.cat');
 
 function getCurrentTime() {
 
@@ -32,13 +31,26 @@ function getCurrentTime() {
 
 }
 
-button.addEventListener('click', () => {
-    button.classList.toggle('clicked');
+function changeText() {
     if (blockQuote.textContent === '"Good Evening!"') {
         blockQuote.textContent = "Let's party!"
     } else {
         blockQuote.textContent = '"Good Evening!"';
     }
+}
+
+function changeImage() {
+    if(image.src === 'https://upload.wikimedia.org/wikipedia/commons/8/8c/Cat_sleep.jpg') {
+        image.src = 'https://s3.amazonaws.com/media.skillcrush.com/skillcrush/wp-content/uploads/2016/08/partyTime.jpg';
+    } else{
+        image.src = 'https://upload.wikimedia.org/wikipedia/commons/8/8c/Cat_sleep.jpg';
+    }
+}
+
+button.addEventListener('click', () => {
+    button.classList.toggle('clicked');
+    changeText();
+    changeImage();
 })
 
 
