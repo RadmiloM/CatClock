@@ -48,3 +48,7 @@ blockquote {
     padding: 10px 0;
     margin-top: 20px;
 }
+
+.party.clicked {
+    background-color: rgb(10, 141, 171);
+}
