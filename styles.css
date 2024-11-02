@@ -52,3 +52,10 @@ blockquote {
 .party.clicked {
     background-color: rgb(10, 141, 171);
 }
+
+p {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 12px;
+    font: 14px / 26px 'Bungee';
+}
