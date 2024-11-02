@@ -15,3 +15,10 @@ h1 {
 h4 {
     text-align: center;
 }
+
+.cat {
+    max-width: 30em;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
