@@ -27,3 +27,9 @@ h4 {
     margin-top: 50px;
     text-align: center;
 }
+
+blockquote {
+    font: 2em/1em 'Open Sans', sans-serif;
+    text-align: center;
+    margin: -70px 0 100px 0;
+}
