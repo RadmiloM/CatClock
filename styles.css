@@ -36,3 +36,15 @@ blockquote {
     -webkit-text-stroke: 1px black;
     text-shadow: 2px 2px #000;
 }
+
+.party {
+    background-color: #222;
+    width: 300px;
+    font-family: 'Bungee', cursive;
+    font-size: 18px;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 0;
+    margin-top: 20px;
+}
